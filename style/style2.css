@@ -1,0 +1,49 @@
+#konteiner {
+    max-width: 960px;
+    margin: auto;
+}
+
+.slika {
+    width: 150px;
+    margin: 20px auto;
+    border: solid 1px rgb(15, 120, 230);
+    border-top: solid 0;
+    border-radius: 12px 12px 0 0;
+}
+
+img {
+    width: 100%;
+    background-color: rgb(15, 120, 230);
+    border-radius: 12px 12px 0 0;
+}
+
+figcaption {
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+#galerija {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 4px;
+}
+
+@media screen and (max-width: 1024px) {
+    #galerija {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #galerija {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #galerija {
+        grid-template-columns: 1fr;
+    }
+    
+}
